@@ -1,0 +1,212 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  color: #808386;
+  background-color: #242930;
+}
+
+#wrap {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.cssBoxModel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.controls fieldset {
+  width: 600px;
+  height: 200px;
+  padding: 10px;
+}
+
+.controls fieldset legend {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #fcecc5;
+}
+
+.controls .sliders {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 0;
+  text-transform: uppercase;
+}
+
+.controls .sliders .slider-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.controls .sliders .slider-bar p {
+  width: 20%;
+}
+
+.controls .sliders .slider-bar span {
+  width: 20%;
+}
+
+.controls .sliders .slider-bar .empty-bar {
+  width: 40%;
+  height: 10px;
+  position: relative;
+  border-radius: 5px 0 0 5px;
+  background-color: #333;
+}
+
+.controls .sliders .slider-bar .empty-bar .silder_gauge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  border-radius: inherit;
+  background-color: #c5d936;
+  color: #c5d936;
+}
+
+.controls .sliders .slider-bar .empty-bar .silder_gauge i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  line-height: 10px;
+  color: inherit;
+  cursor: pointer;
+}
+
+.boxmodel {
+  margin-left: 100px;
+}
+
+.boxmodel .controls fieldset {
+  height: 150px;
+}
+
+.boxmodel .controls fieldset .sliders .slider-bar .silder_gauge {
+  width: 40%;
+  background-color: #63BCF8;
+  color: #63BCF8;
+}
+
+.boxmodel .box-modeling {
+  position: relative;
+  margin-top: 100px;
+}
+
+.boxmodel .box-modeling div {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  border: 1px solid black;
+}
+
+.boxmodel .box-modeling .contentBox {
+  background-color: #63bcf8;
+  width: calc(40px + 0px);
+  height: calc(40px + 0px);
+  top: 60px;
+  left: 60px;
+  z-index: 10;
+}
+
+.boxmodel .box-modeling .contentBox span {
+  text-shadow: 0px 1px 1px #dee98c;
+  color: #0b90ea;
+}
+
+.boxmodel .box-modeling .paddingBox {
+  background-color: #C5D936ad;
+  width: calc(40px + 40px);
+  height: calc(40px + 40px);
+  top: 40px;
+  left: 40px;
+  z-index: 8;
+}
+
+.boxmodel .box-modeling .paddingBox span {
+  color: #93a41f;
+  text-shadow: 0px 1px 1px #dee98c;
+}
+
+.boxmodel .box-modeling .borderBox {
+  background-color: #F8CC63;
+  width: calc(40px + 80px);
+  height: calc(40px + 80px);
+  top: 20px;
+  left: 20px;
+  z-index: 6;
+}
+
+.boxmodel .box-modeling .borderBox span {
+  color: #c38c09;
+  text-shadow: 0px 1px 1px #fcecc5;
+}
+
+.boxmodel .box-modeling .marginBox {
+  background-color: #de6a63;
+  width: calc(40px + 120px);
+  height: calc(40px + 120px);
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+
+.boxmodel .box-modeling .marginBox span {
+  color: #b52e26;
+  text-shadow: 0px 1px 1px #f0bab7;
+}
+
+.boxmodel .box-modeling span {
+  position: relative;
+  left: 5px;
+  font-size: 8px;
+  text-transform: uppercase;
+}
+
+/* top을 올리면 prev에 -값을 넣어줌 , left값이 오르면 prev에 -값을 넣어줌 
+     right값과 bottom을 올리면 포지션 변경이 없음
+  */
+/*# sourceMappingURL=styles.css.map */
